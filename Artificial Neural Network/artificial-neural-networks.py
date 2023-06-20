@@ -83,3 +83,49 @@
 # - thus made the gradients tend to get smaller as it move backwards in the network
 # - it makes the earlier layers in network are the slowest to train & the accuracy is compromised
 # --- infographic: 2-3-vanishing-gradient.JPG
+
+# ACTIVATION FUNCTIONS
+
+# types of activation functions to build neural network:
+# - Binary Step Function
+# - Linear Function
+# - Sigmoid Function
+# - Hyperbolic Tangent Function
+# - ReLU (Rectified Linear Unit)
+# - Leaky ReLU
+# - Softmax Function
+
+# Sigmoid Function: 2-4-sigmoid-function.JPG
+# - a = 1/(1+exp(-z))
+# - the function only range from 0 to 1
+# --- the values received are all positive (which not all time we desire all neuron to be the same sign)
+# --- NOT symmetric around the origin
+# - shortcoming is function is pretty flat beyond +3 & -3
+# --- means once the function falls in that region, the gradients become very small (vanishing gradient)
+
+# Hyperbolic Tangent Function (tanh): 2-4-hyperbolic-tangent-function.JPG
+# - a = (exp(z)-exp(-z)) / (exp(z) + exp(-z))
+# - it's a scaled function of Sigmoid Function (include negative)
+# - it ranges from -1 to 1
+# - it's symmetric around the origin
+# - it still has issues with Vanishing Gradient
+
+# Rectified Linear Unit (ReLU): 2-4-rectified-linear-unit-function.JPG
+# - a = max(0,z)
+# --- if the input is negative, it will be converted to 0, and the neuron will NOT get activated
+# ------ it makes the network sparse & efficient
+# - is the most widely used activation function when designing networks today (2023)
+# - main advantage is, it doesn NOT activate all the neurons at the same time
+# - it overcome the vanishing gradient problem
+
+# Softmax Function:
+# a = (e^zi) / Σ[m, k=1] e^zk
+# - it's a type of sigmoid function that is handy for 'Classification Problems'
+# - it's ideally used when trying to get probabilities to define class of each input
+# - example: output = [1.6, 0.55, 0.98] --SOFTMAX--> [0.51, 0.18, 0.31]
+# --- it made classification easier to determine which category it belongs
+
+# conclusion of activation function:
+# - sigmoid & tanh function are avoided in many applications nowadays, since they lead to vanishing gradient problem
+# - ReLU function is widely used, but only used in `hidden layers`
+# - generally, in building a model, can begin using ReLU function then switch to another function if it doesn't yield a good performance
