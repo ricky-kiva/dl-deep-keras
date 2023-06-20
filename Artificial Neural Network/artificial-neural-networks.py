@@ -72,3 +72,14 @@
 # --- calculate error between Ground Truth & predicted output
 # --- update weights & biases through Backpropagation
 # --- repeat above 3 steps until number of epoch is reached / output is elow predefined threshold
+
+### VANISHING GRADIENT PROBLEM
+
+# Vanishing Gradient: is a problem where Sigmoid Activation Function prevent neural networks to bloom sooner
+
+# take a look at this picture: 2-3-sigmoid-simple-neural-network.JPG
+# - the gradients is small, especially the one with respect to w1
+# - it is because Sigmoid Function make all the intermediate values in network are between 0 & 1
+# - thus made the gradients tend to get smaller as it move backwards in the network
+# - it makes the earlier layers in network are the slowest to train & the accuracy is compromised
+# --- infographic: 2-3-vanishing-gradient.JPG
