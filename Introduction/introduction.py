@@ -1,4 +1,4 @@
-### Introduction to Deep Learning
+### INTRODUCTION TO DEEP LEARNING
 
 # applications of Deep Learning:
 # - color restoration
@@ -12,7 +12,7 @@
 # - object classification & detection
 # - self-driving car
 
-### Neurons & Neural Networks
+### NEURONS & NEURAL NETWORKS
 
 # deep learning algorithms are largely inspired by neurons & neural networks function that process data in the brain
 # Neural Networks is a group/network of Neurons
@@ -37,7 +37,7 @@
 # Artificial Neural Network behaves the same as biological neuron
 # - it consists Soma, Dendrites, & Axon
 
-### Artificial Neural Networks
+### ARTIFICIAL NEURAL NETWORKS
 
 # Network of Neurons (Neural Networks) often divided to different layers:
 # - Input layer: first layer that feeds the input into the network
