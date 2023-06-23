@@ -56,3 +56,27 @@
 
 # commonly, it's good to apply the 2nd convolutional layer filter twice of the 1st convolutional layer
 # commonly, output activation to be used is `softmax` to convert outputs to probabilities
+
+### RECURRENT NEURAL NETWORKS (RNNs)
+
+# RNNs are networks with loops that take input from the previous 'data point' that was fed into the network
+# RNNs architecture: 
+# - at t = 0, RNNs neural network starts with normal neural network
+# - at t = 0, it takes input x0 & outputs a0
+# - at t = 1, it takes input x1, (a0 weighted with w[0,1]), & outputs a1
+# - at t = n, so on
+# infographic: 4-3-RNN-architecture.JPG
+
+# RNNs good at modelling patterns & sequences of data:
+# - text
+# - genomes
+# - handwriting
+# - stock markets
+
+# RNNs algorithms take time & sequence into account, means it has temporal dimension
+
+# LSTM (Long Short-Term Memory Model) is a popular RNN used for:
+# - image generation
+# - handwriting generation
+# - describe images
+# - describe videos
