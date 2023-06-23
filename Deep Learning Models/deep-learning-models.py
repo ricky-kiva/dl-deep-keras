@@ -80,3 +80,30 @@
 # - handwriting generation
 # - describe images
 # - describe videos
+
+### AUTOENCODERS
+
+# Autoencoding is data compression algorithm where `compression` & `decompression` functions learned automatically from data using neural networks
+# autoencoders is data specific (only able to compress data similar to what they have been trained on)
+# example: autoencoder trained on pictures of cars would rather poor job compressing building pictures
+
+# interesting applications:
+# - data denoising & dimensionality reduction for data visualization
+
+# autoencoder architecture: 4-4-autoencoder-architecture.JPG
+# - it takes image as an input
+# - using encoder, it finds the optimal representation of the input image
+# - using decoder, it restore the original image back
+
+# autoencoder is an `unsupervised` neural network model
+# - it uses backpropagation by setting the target variable to be the same as the input
+# --- it tries to learn approximation of an identity function
+
+# autoencoder can learn diverse data projections, not only linear transformation like PCA
+
+# Restricted Boltzmann Machines (RBMs) is one of popular autoencoders that could fix imbalanced datasets:
+# - RBMs learn the input to get insight on the distribution of the minority class
+# - then RBMs generate more data points of the class
+
+# RBMs could also estimate missing values in different features of dataset
+# RBMs could also do automatic feature extraction for unstructured data  
